@@ -1,6 +1,6 @@
-# Vagrant Environment for Meter using Chef for provisioning
+# Example of Deploying a Meter Using Chef
 
-Example of using Vagrant to stand up a VM and deploy meter using Chef
+Example of using Vagrant to stand up a virtual machine and deploying meter using Chef
 
 ## Prerequisites
 
@@ -12,10 +12,10 @@ Example of using Vagrant to stand up a VM and deploy meter using Chef
 
 1. Download the contents of the GitHub repository
     ```bash
-$ git clone
+$ git clone https://github.com/boundary/vagrant-meter-chef
     ```
 
-2. Modify `Vagrantfile` with your _api-token_
+2. Modify `Vagrantfile` with your _api-token_ with the value from your account.
     ```json
 chef.json = {'boundary_meter' => {'token' => '<api-token>' } }
     ```
